@@ -132,6 +132,24 @@ console.log (roundThisUp(myNumber));
 
 
 
+//convert string number to actual number
+
+
+
+var stringNumber = "56289";
+var converToNum = function (string){
+
+var convertedStringNumber = parseFloat(stringNumber);
+return convertedStringNumber;
+
+}
+
+
+
+console.log (converToNum(stringNumber));
+
+
+
 
 
 
