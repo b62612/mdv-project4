@@ -80,25 +80,37 @@ var periodCount = 0;
         
 }                           
                                         
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
+                                                                             
         
 }
      if (((atCount != 1) || (periodCount != 1))||((myString.indexOf("@")) > (myString.indexOf(".")))){
     return false;}
    else 
    {return true;}
-   
-      
-            
+           
 }
 console.log (checkIfEmail(myString));
 
+// function to check string if it is a url
+
+var checkForUrl = function (myString){
+var myString = "HTTp://TROPICOSmicitY.COM"
+var myLowerString= myString.toLowerCase();
+               
+               var mySubLower1 = myLowerString.substr(0,7);
+                var mySubLower2 = myLowerString.substr(0,8);
+
+
+
+if ((mySubLower1 === "http://") || (mySubLower2 === "https://")){
+return true;}
+
+else {
+return false;}
+
+}
+
+checkForUrl(myString);
 
 
 
