@@ -113,6 +113,21 @@ return false;}
 checkForUrl(myString);
 
 
+//format number to specific decimal places
+
+
+
+var myNumber = 345.987111;
+var roundThisUp = function (number, dp){
+
+var roundedNumber = myNumber.toFixed(2);
+return roundedNumber;
+
+}
+
+
+
+console.log (roundThisUp(myNumber));
 
 
 
