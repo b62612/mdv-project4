@@ -6,9 +6,8 @@ alert("JavaScript works!");//alert("JavaScript works!");
 // My Function Library
 
 var myFunctionLibrary = function() {
-					// try switch statement
-					// To check string to see if it matches phone format
-					var checkIfPhone = function(stringToCheck){ // implement charCodeAt, charAt (3) = "-", charAt(7) = "-", 
+					
+					var checkIfPhone = function(stringToCheck){ 
 						var stringToCheck = "505-857-8057";
 						var checkChars1 = stringToCheck.substring(0, 3);
 						var checkChars2 = stringToCheck.substring(4, 7);
@@ -139,16 +138,66 @@ console.log (roundThisUp(myNumber));
 var stringNumber = "56289";
 var converToNum = function (string){
 
+if (stringNumber != parseInt(stringNumber)){
+console.log ("string passed in is not a number");
+}
+else {
+
 var convertedStringNumber = parseFloat(stringNumber);
 return convertedStringNumber;
 
+
 }
-
-
+}
 
 console.log (converToNum(stringNumber));
 
 
+//
+// to check change given string to title case
+// first convert string to lowercase
+// convert char at position 0 to uppercase, convert every character that comes after " " to uppercase.
+
+
+
+var converToTitle = function (myNonTitle){
+            var myNonTitle = "I have been CoDing like FOREVER";
+            var myLowNonTitle= myNonTitle.toLowerCase();
+console.log (myNonTitle.toLowerCase());
+            var myFirstChar = myLowNonTitle.charAt(0);
+            var myNewFirstChar = myFirstChar.toUpperCase();
+console.log (myFirstChar);
+var foundAtPosition = 0;
+var spaceCount = 0;
+
+var myConvertedString;
+
+            while (foundAtPosition != -1){
+            
+            var charToConvert = myLowNonTitle.charAt(myLowNonTitle.indexOf((" ")+ 1));
+            var charConverted = charToConvert.toUpperCase();
+            
+            foundAtPosition = myString.indexOf(" ",foundAtPosition);
+            if (foundAtPosition != -1)
+                                        {
+            
+                                            spaceCount++;
+                                            foundAtPosition++;
+        
+                                        } 
+                                        
+    return charConverted();
+}
+     
+    
+    converToTitle(myNonTitle);
+}
+
+
+
+
+
+
 
 
 
@@ -156,3 +205,4 @@ console.log (converToNum(stringNumber));
 
 
 }
+var newLib = new myFunctionLibrary();
